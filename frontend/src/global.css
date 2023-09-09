@@ -12,3 +12,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.center {
+  text-align: center;
+}
+.notes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.note{
+  margin: 0.8em;
+  background: #ef8585;
+  color: #fff;
+  box-shadow: 2px 2px 5px #3f3f3f;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.note:hover {
+  transform: scale(1.05);
+}
+
+.notes h2 {
+  font-size: 3.5em;
+  margin: 0 2em;
+  text-transform: capitalize;
+}
+
+.notes p {
+  font-size: 1.5em;
+  margin: 0.5em 2em;
+  text-align: center;
+}

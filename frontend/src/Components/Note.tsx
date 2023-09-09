@@ -1,3 +1,4 @@
+import { formatDate } from "../Utils/formatDate";
 import { Note as NoteModel } from "../models/note";
 
 interface NoteProps {
@@ -8,14 +9,16 @@ const Note = ({ note }: NoteProps) => {
     const {
         title,
         text,
-        // createdAt,
-        // updatedAt
+        createdAt,
+        updatedAt
     } = note;
     return (
-        <li className="note">
+        <div className="note">
             <h2>{title}</h2>
             <p>{text}</p>
-        </li>
+            <hr />
+            <h5 className="center">Created At: {formatDate(createdAt)} | Updated At: {formatDate(updatedAt)} </h5>
+        </div>
     );
 }
 

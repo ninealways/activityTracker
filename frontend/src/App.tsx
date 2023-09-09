@@ -22,14 +22,14 @@ function App() {
   }, []);
 
   return (
-    <div className="notes">
-      <ul>
+    <div className="app">
+      <div className="notes">
         {notes.map(note => {
           return (
             <Note note={note} key={note._id} />
           )
         })}
-      </ul>
+      </div>
     </div>
   );
 }
