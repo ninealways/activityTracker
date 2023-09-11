@@ -19,6 +19,7 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .note{
@@ -44,4 +45,33 @@ code {
   font-size: 1.5em;
   margin: 0.5em 2em;
   text-align: center;
+}
+
+.add-note {
+  padding: 0.5em 2em;
+  background: #0e39ac;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-title, .add-text {
+  font-size: 1.2em;
+  background: transparent;
+  color: #fff;
+  padding: 0.3em 0.5em;
+  margin: 0em 1em;
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+
+.add-submit {
+  background: #0089ff;
+  color: #fff;
+  padding: 0.5em 1em;
+  font-size: 1.1em;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.3em;
 }
