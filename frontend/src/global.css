@@ -28,11 +28,35 @@ code {
   color: #fff;
   box-shadow: 2px 2px 5px #3f3f3f;
   transition: 0.3s ease-in;
+  position: relative;
+}
+
+.delete-icon{
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 9;
+  background: #a31414;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 800;
   cursor: pointer;
 }
 
-.note:hover {
-  transform: scale(1.05);
+.edit-icon {
+  position: absolute;
+  right: 31px;
+  top: 0;
+  z-index: 9;
+  background: #1497a3;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 800;
+  cursor: pointer;
 }
 
 .notes h2 {
@@ -74,4 +98,15 @@ code {
   border: none;
   cursor: pointer;
   border-radius: 0.3em;
+}
+.cancel-button{
+  background: #343434;
+  color: #fff;
+  padding: 0.5em 1em;
+  font-size: 1.1em;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.3em;
+  margin-left: 1rem;
 }

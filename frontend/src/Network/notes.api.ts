@@ -31,3 +31,17 @@ export async function createNote(note: NoteInput): Promise<Note> {
     })
     return response.json();
 }
+
+export async function deleteNote(noteId: string) {
+    await fetchData("/api/notes/" + noteId, { method: "DELETE" });
+}
+
+export async function updatedNote(noteId: string, note: NoteInput) {
+    await fetchData("/api/notes/" + noteId, {
+        method: "PATCH",
+        headers: {
+            "Content-type": "application/json",
+        },
+        body: JSON.stringify(note),
+    });
+}
