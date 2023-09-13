@@ -20,3 +20,4 @@ Note:
 Please add the following environment variables to run the Backend API:
 1. MONGO_CONN_STRING = [Mongodb connection string]
 2. PORT=5001 [or any other port]
+3. SESSION_SECRET = [any string]
