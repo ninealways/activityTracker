@@ -7,6 +7,7 @@ import userRoutes from "./routes/users";
 import session from "express-session";
 import env from "./utils/validateEnv";
 import MongoStore from "connect-mongo";
+import { requiresAuth } from "./Middleware/auth";
 const app = express();
 
 app.use(morgan("dev")); //this is just to log api end point and status code in console.
@@ -28,7 +29,7 @@ app.use(session({
 }));
 
 app.use("/api/users", userRoutes); //defines the actual route to be used for user api's
-app.use("/api/notes", notesRoute); //defines the actual route to be used for notes api's
+app.use("/api/notes", requiresAuth, notesRoute); //defines the actual route to be used for notes api's
 
 //this handles for any endpoints that does not exist in our application
 app.use((req, res, next) => {
