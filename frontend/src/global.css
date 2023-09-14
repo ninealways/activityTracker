@@ -79,7 +79,7 @@ code {
   justify-content: center;
 }
 
-.add-title, .add-text {
+.inputs {
   font-size: 1.2em;
   background: transparent;
   color: #fff;
@@ -88,8 +88,10 @@ code {
   border: none;
   border-bottom: 1px solid #fff;
 }
-
-.add-submit {
+.inputs:hover, .inputs:focus {
+  outline: none;
+}
+.submit {
   background: #0089ff;
   color: #fff;
   padding: 0.5em 1em;
@@ -109,4 +111,17 @@ code {
   cursor: pointer;
   border-radius: 0.3em;
   margin-left: 1rem;
+}
+
+.login-form {
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 100px auto;
+  padding: 2rem;
+  background: #00e9ff;
+  border-radius: 0.5em;
+  gap: 1em;
 }
