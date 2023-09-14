@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fafafa;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.center {
+  text-align: center;
+}
+.notes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.note{
+  margin: 0.8em;
+  background: #ef8585;
+  color: #fff;
+  box-shadow: 2px 2px 5px #3f3f3f;
+  transition: 0.3s ease-in;
+  position: relative;
+}
+
+.delete-icon{
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 9;
+  background: #a31414;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.edit-icon {
+  position: absolute;
+  right: 31px;
+  top: 0;
+  z-index: 9;
+  background: #1497a3;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.notes h2 {
+  font-size: 3.5em;
+  margin: 0 2em;
+  text-transform: capitalize;
+}
+
+.notes p {
+  font-size: 1.5em;
+  margin: 0.5em 2em;
+  text-align: center;
+}
+
+.add-note {
+  padding: 0.5em 2em;
+  background: #0e39ac;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputs {
+  font-size: 1.2em;
+  background: transparent;
+  color: #fff;
+  padding: 0.3em 0.5em;
+  margin: 0em 1em;
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+.inputs:hover, .inputs:focus {
+  outline: none;
+}
+.submit {
+  background: #0089ff;
+  color: #fff;
+  padding: 0.5em 1em;
+  font-size: 1.1em;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.3em;
+}
+.cancel-button{
+  background: #343434;
+  color: #fff;
+  padding: 0.5em 1em;
+  font-size: 1.1em;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.3em;
+  margin-left: 1rem;
+}
+
+.login-form {
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 100px auto;
+  padding: 2rem;
+  background: #00e9ff;
+  border-radius: 0.5em;
+  gap: 1em;
+}
